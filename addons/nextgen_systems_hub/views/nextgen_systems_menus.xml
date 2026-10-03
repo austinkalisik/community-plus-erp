@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- NEXERP                                                        -->
+    <!-- ============================================================= -->
+
+    <record id="action_open_nexerp" model="ir.actions.act_url">
+        <field name="name">NexERP</field>
+        <field name="url">https://nexerp.nextgenpng.net</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- ============================================================= -->
+    <!-- NEXTGEN B2B STORE                                             -->
+    <!-- ============================================================= -->
+
+    <record id="action_open_b2b_store" model="ir.actions.act_url">
+        <field name="name">NextGen B2B Store</field>
+        <field name="url">https://store.nextgenpng.net</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- ============================================================= -->
+    <!-- ONESUITE                                                      -->
+    <!-- ============================================================= -->
+
+    <record id="action_open_onesuite" model="ir.actions.act_url">
+        <field name="name">OneSuite</field>
+        <field name="url">https://onesuite.nextgenpng.net/web</field>
+        <field name="target">self</field>
+    </record>
+
+    <!-- ============================================================= -->
+    <!-- ROOT APP                                                      -->
+    <!-- ============================================================= -->
+
+    <menuitem
+        id="menu_nextgen_systems_root"
+        name="NextGen Systems"
+        sequence="3"
+        groups="base.group_user"
+    />
+
+    <menuitem
+        id="menu_nextgen_onesuite"
+        name="OneSuite"
+        parent="menu_nextgen_systems_root"
+        action="action_open_onesuite"
+        sequence="10"
+        groups="base.group_user"
+    />
+
+    <menuitem
+        id="menu_nextgen_nexerp"
+        name="NexERP"
+        parent="menu_nextgen_systems_root"
+        action="action_open_nexerp"
+        sequence="20"
+        groups="base.group_user"
+    />
+
+    <menuitem
+        id="menu_nextgen_store"
+        name="B2B Store"
+        parent="menu_nextgen_systems_root"
+        action="action_open_b2b_store"
+        sequence="30"
+        groups="base.group_user"
+    />
+
+</odoo>
