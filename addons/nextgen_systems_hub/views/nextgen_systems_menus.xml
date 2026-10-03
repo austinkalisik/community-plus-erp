@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- ===================================================== -->
-    <!-- ACTIONS                                               -->
-    <!-- ===================================================== -->
-
     <record id="action_open_onesuite" model="ir.actions.act_url">
-        <field name="name">OneSuite ERP</field>
-        <field name="url">https://onesuite.nextgenpng.net/odoo</field>
+        <field name="name">NextGen Platform</field>
+        <field name="url">/platform</field>
         <field name="target">self</field>
     </record>
 
@@ -18,7 +14,7 @@
     </record>
 
     <record id="action_open_b2b_store" model="ir.actions.act_url">
-        <field name="name">NextGen B2B Store</field>
+        <field name="name">B2B Store</field>
         <field name="url">https://store.nextgenpng.net</field>
         <field name="target">new</field>
     </record>
@@ -41,70 +37,50 @@
         <field name="target">new</field>
     </record>
 
-    <record id="action_open_nextgen_website" model="ir.actions.act_url">
-        <field name="name">NextGen Website</field>
-        <field name="url">https://www.nextgenpng.net</field>
+    <record id="action_open_support" model="ir.actions.act_url">
+        <field name="name">NextGen Support</field>
+        <field name="url">https://nextgenpng.net/support/</field>
         <field name="target">new</field>
     </record>
 
-    <!-- ===================================================== -->
-    <!-- ROOT                                                  -->
-    <!-- ===================================================== -->
+    <record id="action_open_company_site" model="ir.actions.act_url">
+        <field name="name">NextGen Website</field>
+        <field name="url">https://nextgenpng.net</field>
+        <field name="target">new</field>
+    </record>
+
 
     <menuitem
         id="menu_nextgen_systems_root"
-        name="NextGen Systems"
-        sequence="3"
+        name="NextGen Platform"
+        sequence="1"
         groups="base.group_user"
     />
 
-    <!-- ===================================================== -->
-    <!-- BUSINESS SYSTEMS                                      -->
-    <!-- ===================================================== -->
-
-    <menuitem
-        id="menu_nextgen_business"
-        name="Business Systems"
-        parent="menu_nextgen_systems_root"
-        sequence="10"
-        groups="base.group_user"
-    />
 
     <menuitem
         id="menu_nextgen_onesuite"
-        name="OneSuite ERP"
-        parent="menu_nextgen_business"
+        name="Platform Home"
+        parent="menu_nextgen_systems_root"
         action="action_open_onesuite"
-        sequence="10"
+        sequence="5"
         groups="base.group_user"
     />
 
     <menuitem
         id="menu_nextgen_nexerp"
         name="NexERP"
-        parent="menu_nextgen_business"
+        parent="menu_nextgen_systems_root"
         action="action_open_nexerp"
-        sequence="20"
+        sequence="10"
         groups="base.group_user"
     />
 
     <menuitem
         id="menu_nextgen_store"
         name="B2B Store"
-        parent="menu_nextgen_business"
-        action="action_open_b2b_store"
-        sequence="30"
-        groups="base.group_user"
-    />
-
-    <!-- ===================================================== -->
-    <!-- OPERATIONS & INFRASTRUCTURE                            -->
-    <!-- ===================================================== -->
-
-    <menuitem
-        id="menu_nextgen_operations"
-        name="Operations &amp; Tools"
         parent="menu_nextgen_systems_root"
+        action="action_open_b2b_store"
         sequence="20"
         groups="base.group_user"
     />
@@ -112,48 +88,45 @@
     <menuitem
         id="menu_nextgen_sms"
         name="SMS Gateway"
-        parent="menu_nextgen_operations"
+        parent="menu_nextgen_systems_root"
         action="action_open_sms"
-        sequence="10"
+        sequence="30"
         groups="base.group_user"
     />
 
     <menuitem
         id="menu_nextgen_paperclip"
         name="Paperclip"
-        parent="menu_nextgen_operations"
+        parent="menu_nextgen_systems_root"
         action="action_open_paperclip"
-        sequence="20"
+        sequence="40"
         groups="base.group_user"
     />
 
     <menuitem
         id="menu_nextgen_godseye"
         name="God's Eye"
-        parent="menu_nextgen_operations"
+        parent="menu_nextgen_systems_root"
         action="action_open_godseye"
-        sequence="30"
+        sequence="50"
         groups="base.group_user"
     />
 
-    <!-- ===================================================== -->
-    <!-- COMPANY                                               -->
-    <!-- ===================================================== -->
-
     <menuitem
-        id="menu_nextgen_company"
-        name="Company"
+        id="menu_nextgen_support"
+        name="Support"
         parent="menu_nextgen_systems_root"
-        sequence="30"
+        action="action_open_support"
+        sequence="60"
         groups="base.group_user"
     />
 
     <menuitem
         id="menu_nextgen_website"
-        name="NextGen Website"
-        parent="menu_nextgen_company"
-        action="action_open_nextgen_website"
-        sequence="10"
+        name="Corporate Website"
+        parent="menu_nextgen_systems_root"
+        action="action_open_company_site"
+        sequence="70"
         groups="base.group_user"
     />
 

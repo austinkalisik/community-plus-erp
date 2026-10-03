@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- NEXTGEN WEBSITE HEADER                                        -->
+    <!-- ============================================================= -->
+
+    <template
+        id="nextgen_website_layout"
+        inherit_id="website.layout"
+        priority="99"
+    >
+
+        <xpath expr="//header" position="replace">
+
+            <header class="ng-header">
+                <div class="container ng-header-inner">
+
+                    <a href="/" class="ng-brand">
+                        <span class="ng-brand-main">
+                            NEXTGEN
+                        </span>
+
+                        <span class="ng-brand-sub">
+                            TECHNOLOGY LIMITED
+                        </span>
+                    </a>
+
+                    <nav class="ng-nav">
+                        <a href="/">Home</a>
+
+                        <a href="/platform">
+                            Platform
+                        </a>
+
+                        <a
+                            href="https://nexerp.nextgenpng.net"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            NexERP
+                        </a>
+
+                        <a
+                            href="https://store.nextgenpng.net"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            B2B Store
+                        </a>
+
+                        <a
+                            href="https://nextgenpng.net/support/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Support
+                        </a>
+                    </nav>
+
+                </div>
+            </header>
+
+        </xpath>
+
+
+        <!-- ========================================================= -->
+        <!-- NEXTGEN WEBSITE FOOTER                                    -->
+        <!-- ========================================================= -->
+
+        <xpath expr="//footer" position="replace">
+
+            <footer class="ng-footer">
+
+                <div class="container ng-footer-grid">
+
+                    <div>
+                        <div class="ng-footer-title">
+                            NextGen Technology Limited
+                        </div>
+
+                        <p>
+                            Provider of innovative technology,
+                            software and business solutions in
+                            Papua New Guinea.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="ng-footer-heading">
+                            Contact
+                        </div>
+
+                        <p>
+                            support@nextgenpng.net
+                        </p>
+
+                        <p>
+                            +675 325 2023
+                        </p>
+
+                        <p>
+                            +675 7733 0000
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="ng-footer-heading">
+                            Office
+                        </div>
+
+                        <p>
+                            Mutual Rumana Building,
+                            Islander Road, Waigani
+                        </p>
+
+                        <p>
+                            Port Moresby, NCD,
+                            Papua New Guinea
+                        </p>
+
+                        <p>
+                            P.O. Box 822,
+                            Vision City 1131
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="ng-footer-heading">
+                            Business Hours
+                        </div>
+
+                        <p>
+                            Mon - Fri: 8:00 AM - 5:00 PM
+                        </p>
+
+                        <p>
+                            Saturday: 8:00 AM - 12:00 PM
+                        </p>
+
+                        <p>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="container ng-footer-bottom">
+                    © NextGen Technology Limited.
+                    All rights reserved.
+                </div>
+
+            </footer>
+
+        </xpath>
+
+    </template>
+
+
+    <!-- ============================================================= -->
+    <!-- NEXTGEN PLATFORM HOMEPAGE                                      -->
+    <!-- ============================================================= -->
+
+    <template
+        id="nextgen_platform_home"
+        inherit_id="website.homepage"
+        priority="99"
+    >
+
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+            <div id="wrap" class="oe_structure ng-platform-home">
+
+                <!-- HERO -->
+
+                <section class="ng-hero">
+
+                    <div class="container">
+
+                        <div class="ng-eyebrow">
+                            NEXTGEN TECHNOLOGY LIMITED
+                        </div>
+
+                        <h1>
+                            One Platform.
+                            Connected Business.
+                        </h1>
+
+                        <p class="ng-hero-text">
+                            Access NextGen business systems,
+                            purchasing, ERP, CRM, inventory,
+                            operations and support from one
+                            central platform.
+                        </p>
+
+                        <div class="ng-buttons">
+
+                            <a
+                                href="/platform"
+                                class="ng-btn ng-btn-primary"
+                            >
+                                Open NextGen Platform
+                            </a>
+
+                            <a
+                                href="https://nextgenpng.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="ng-btn ng-btn-secondary"
+                            >
+                                Corporate Website
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- BUSINESS SYSTEMS -->
+
+                <section class="ng-section">
+
+                    <div class="container">
+
+                        <div class="ng-section-heading">
+                            <span>CONNECTED SYSTEMS</span>
+
+                            <h2>
+                                NextGen Business Applications
+                            </h2>
+
+                            <p>
+                                Each application remains
+                                independently deployed while
+                                being accessible through the
+                                NextGen Platform.
+                            </p>
+                        </div>
+
+                        <div class="ng-card-grid">
+
+                            <a
+                                class="ng-card"
+                                href="/platform"
+                            >
+                                <div class="ng-card-tag">
+                                    CORE
+                                </div>
+
+                                <h3>
+                                    NextGen Platform
+                                </h3>
+
+                                <p>
+                                    Finance, sales, purchasing,
+                                    CRM, projects, HR,
+                                    approvals and reporting.
+                                </p>
+
+                                <span>
+                                    Open Platform →
+                                </span>
+                            </a>
+
+
+                            <a
+                                class="ng-card"
+                                href="https://nexerp.nextgenpng.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="ng-card-tag">
+                                    ERP
+                                </div>
+
+                                <h3>
+                                    NexERP
+                                </h3>
+
+                                <p>
+                                    Internal operations,
+                                    CRM, AIMS inventory,
+                                    procurement and management.
+                                </p>
+
+                                <span>
+                                    Open NexERP →
+                                </span>
+                            </a>
+
+
+                            <a
+                                class="ng-card"
+                                href="https://store.nextgenpng.net"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="ng-card-tag">
+                                    B2B
+                                </div>
+
+                                <h3>
+                                    NextGen B2B Store
+                                </h3>
+
+                                <p>
+                                    Corporate purchasing,
+                                    approvals, quotations,
+                                    orders and account management.
+                                </p>
+
+                                <span>
+                                    Open B2B Store →
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- OPERATIONS -->
+
+                <section class="ng-section ng-section-alt">
+
+                    <div class="container">
+
+                        <div class="ng-section-heading">
+
+                            <span>
+                                OPERATIONS
+                            </span>
+
+                            <h2>
+                                NextGen Tools &amp; Services
+                            </h2>
+
+                        </div>
+
+                        <div class="ng-card-grid">
+
+                            <a
+                                class="ng-card"
+                                href="https://sms.tidalwavesoftwebsolutions.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="ng-card-tag">
+                                    SMS
+                                </div>
+
+                                <h3>
+                                    SMS Gateway
+                                </h3>
+
+                                <p>
+                                    Messaging and OTP
+                                    infrastructure.
+                                </p>
+
+                                <span>
+                                    Open Gateway →
+                                </span>
+                            </a>
+
+
+                            <a
+                                class="ng-card"
+                                href="https://paperclip.tidalwavesoftwebsolutions.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="ng-card-tag">
+                                    WORK
+                                </div>
+
+                                <h3>
+                                    Paperclip
+                                </h3>
+
+                                <p>
+                                    Internal coordination
+                                    and operational workspace.
+                                </p>
+
+                                <span>
+                                    Open Paperclip →
+                                </span>
+                            </a>
+
+
+                            <a
+                                class="ng-card"
+                                href="https://godseye.tidalwavesoftwebsolutions.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="ng-card-tag">
+                                    MONITOR
+                                </div>
+
+                                <h3>
+                                    God's Eye
+                                </h3>
+
+                                <p>
+                                    Monitoring and operational
+                                    visibility platform.
+                                </p>
+
+                                <span>
+                                    Open System →
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- INTEGRATION -->
+
+                <section class="ng-section">
+
+                    <div class="container">
+
+                        <div class="ng-integration">
+
+                            <div>
+                                <div class="ng-eyebrow">
+                                    CONNECTED WORKFLOW
+                                </div>
+
+                                <h2>
+                                    Systems that work together
+                                </h2>
+
+                                <p>
+                                    B2B purchasing, NextGen
+                                    Platform and NexERP are
+                                    connected through secured
+                                    integration APIs.
+                                </p>
+                            </div>
+
+                            <div class="ng-flow">
+                                <div>B2B Store</div>
+                                <strong>→</strong>
+                                <div>NextGen Platform</div>
+                                <strong>→</strong>
+                                <div>NexERP</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SUPPORT -->
+
+                <section class="ng-contact">
+
+                    <div class="container">
+
+                        <div class="ng-section-heading">
+                            <span>CONTACT NEXTGEN</span>
+
+                            <h2>
+                                Need assistance?
+                            </h2>
+                        </div>
+
+                        <div class="ng-contact-grid">
+
+                            <div>
+                                <strong>Email</strong>
+                                <p>
+                                    support@nextgenpng.net
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Office</strong>
+                                <p>
+                                    +675 325 2023
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Support</strong>
+                                <p>
+                                    +675 7733 0000
+                                </p>
+                            </div>
+
+                            <div>
+                                <strong>Location</strong>
+                                <p>
+                                    Mutual Rumana Building,
+                                    Waigani, Port Moresby
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>
