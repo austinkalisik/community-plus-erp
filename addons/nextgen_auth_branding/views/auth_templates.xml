@@ -228,51 +228,14 @@
 
         </xpath>
 
-    </template>
+    <xpath expr="//a[contains(@href, 'odoo.com')]" position="replace">
+            <span class="text-center small mt-4 pt-3 border-top">© 2026 Nextgen Technology Limited. AUSKAL OneSuite — Enterprise Business Management Platform.</span>
+        </xpath>
+</template>
 
 
     <!-- ====================================================== -->
     <!-- FORCE FACTORY LOGIN FORM VISIBLE                       -->
     <!-- ====================================================== -->
 
-    <template
-        id="onesuite_native_login_form"
-        inherit_id="web.login"
-        name="AUSKAL OneSuite Native Login Form"
-        priority="300"
-    >
-
-        <!--
-            Odoo 19 normally shows web.user_switch when no login
-            value exists.
-
-            Remove only that launcher. Authentication itself is
-            untouched.
-        -->
-
-        <xpath
-            expr="//owl-component[@name='web.user_switch']"
-            position="replace"
-        />
-
-
-        <!-- Keep exact factory form; remove only conditional d-none -->
-
-        <xpath
-            expr="//form[contains(@t-attf-class, 'oe_login_form')]"
-            position="attributes"
-        >
-
-            <attribute name="t-attf-class">
-                oe_login_form
-            </attribute>
-
-        </xpath>
-
-
-        <xpath expr="//a[contains(@href, 'odoo.com')]" position="replace">
-            <span class="text-center small mt-4 pt-3 border-top">© 2026 Nextgen Technology Limited. AUSKAL OneSuite — Enterprise Business Management Platform.</span>
-        </xpath>
-</template>
-
-</odoo>
+    </odoo>
