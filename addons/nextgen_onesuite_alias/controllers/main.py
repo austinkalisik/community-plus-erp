@@ -35,4 +35,5 @@ class AuskalWebClient(Home):
         sitemap=False,
     )
     def auskal_web_client(self, path=None, **kwargs):
-        return super().web_client(**kwargs)
+        target = ("/odoo/" + path) if path else "/odoo"
+        return request.redirect(target, 302)
