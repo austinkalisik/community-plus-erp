@@ -1,153 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <odoo>
 
-    <!-- ============================================================= -->
-    <!-- NEXTGEN WEBSITE HEADER                                        -->
-    <!-- ============================================================= -->
+    <!-- Bootstrap corporate stylesheet -->
+    <template
+        id="nextgen_direct_corporate_css"
+        inherit_id="website.layout"
+        priority="999"
+    >
+        <xpath expr="//head" position="inside">
+
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="/nextgen_platform_branding/static/src/css/nextgen_platform.css?v=20261003_020816"
+            />
+
+        </xpath>
+    </template>
+
+
+    <!-- ====================================================== -->
+    <!-- CORPORATE HEADER                                       -->
+    <!-- ====================================================== -->
 
     <template
-        id="nextgen_website_layout"
+        id="nextgen_corporate_layout"
         inherit_id="website.layout"
-        priority="99"
+        priority="100"
     >
 
         <xpath expr="//header" position="replace">
 
-            <header class="ng-header">
-                <div class="container ng-header-inner">
+            <header class="ng-navbar border-bottom bg-white sticky-top">
 
-                    <a href="/" class="ng-brand">
-                        <span class="ng-brand-main">
-                            NEXTGEN
-                        </span>
+                <div class="container-fluid px-4 px-xl-5">
 
-                        <span class="ng-brand-sub">
-                            TECHNOLOGY LIMITED
-                        </span>
-                    </a>
-
-                    <nav class="ng-nav">
-                        <a href="/">Home</a>
-
-                        <a href="/platform">
-                            Platform
-                        </a>
+                    <div
+                        class="d-flex align-items-center justify-content-between"
+                        style="min-height:72px;"
+                    >
 
                         <a
-                            href="https://nexerp.nextgenpng.net"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="/"
+                            class="d-flex align-items-center gap-3 text-decoration-none"
                         >
-                            NexERP
+
+                            <img
+                                src="/web/image/website/1/logo"
+                                alt="NextGen Technology Limited"
+                                class="ng-logo"
+                            />
+
+                            <div class="border-start ps-3 d-none d-sm-block">
+
+                                <div class="ng-product-name">
+                                    OneSuite
+                                </div>
+
+                                <div class="ng-company-name">
+                                    NextGen Technology Limited
+                                </div>
+
+                            </div>
+
                         </a>
 
-                        <a
-                            href="https://store.nextgenpng.net"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            B2B Store
-                        </a>
 
-                        <a
-                            href="https://nextgenpng.net/support/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Support
-                        </a>
-                    </nav>
+                        <nav class="d-none d-lg-flex align-items-center gap-4">
+
+                            <a href="/" class="ng-nav-link">
+                                Home
+                            </a>
+
+                            <a href="#applications" class="ng-nav-link">
+                                Applications
+                            </a>
+
+                            <a href="#integration" class="ng-nav-link">
+                                Platform
+                            </a>
+
+                            <a
+                                href="https://nextgenpng.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="ng-nav-link"
+                            >
+                                Corporate
+                            </a>
+
+                        </nav>
+
+
+                        <div class="d-flex align-items-center gap-2">
+
+                            <a
+                                href="/login"
+                                class="btn btn-outline-dark btn-sm px-3"
+                            >
+                                Sign in
+                            </a>
+
+                            <a
+                                href="/onesuite"
+                                class="btn btn-danger btn-sm px-3"
+                            >
+                                Open OneSuite
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
+
             </header>
 
         </xpath>
 
 
-        <!-- ========================================================= -->
-        <!-- NEXTGEN WEBSITE FOOTER                                    -->
-        <!-- ========================================================= -->
-
         <xpath expr="//footer" position="replace">
 
             <footer class="ng-footer">
 
-                <div class="container ng-footer-grid">
+                <div class="container py-5">
 
-                    <div>
-                        <div class="ng-footer-title">
-                            NextGen Technology Limited
+                    <div class="row g-5">
+
+                        <div class="col-lg-4">
+
+                            <div class="fs-4 fw-bold text-white mb-2">
+                                OneSuite
+                            </div>
+
+                            <div class="small text-uppercase fw-semibold ng-footer-label mb-3">
+                                NextGen Technology Limited
+                            </div>
+
+                            <p class="ng-footer-text">
+                                Business systems, enterprise technology
+                                and connected digital platforms.
+                            </p>
+
                         </div>
 
-                        <p>
-                            Provider of innovative technology,
-                            software and business solutions in
-                            Papua New Guinea.
-                        </p>
-                    </div>
 
-                    <div>
-                        <div class="ng-footer-heading">
-                            Contact
+                        <div class="col-6 col-lg-2">
+
+                            <div class="ng-footer-heading">
+                                Platform
+                            </div>
+
+                            <div class="d-flex flex-column gap-2">
+
+                                <a href="/onesuite">
+                                    OneSuite
+                                </a>
+
+                                <a
+                                    href="https://nexerp.nextgenpng.net/"
+                                    target="_blank"
+                                >
+                                    NexERP
+                                </a>
+
+                                <a
+                                    href="https://store.nextgenpng.net/"
+                                    target="_blank"
+                                >
+                                    B2B Store
+                                </a>
+
+                            </div>
+
                         </div>
 
-                        <p>
-                            support@nextgenpng.net
-                        </p>
 
-                        <p>
-                            +675 325 2023
-                        </p>
+                        <div class="col-6 col-lg-3">
 
-                        <p>
-                            +675 7733 0000
-                        </p>
-                    </div>
+                            <div class="ng-footer-heading">
+                                Contact
+                            </div>
 
-                    <div>
-                        <div class="ng-footer-heading">
-                            Office
+                            <div class="ng-footer-text">
+                                support@nextgenpng.net
+                            </div>
+
+                            <div class="ng-footer-text mt-2">
+                                +675 325 2023
+                            </div>
+
+                            <div class="ng-footer-text">
+                                +675 7733 0000
+                            </div>
+
                         </div>
 
-                        <p>
-                            Mutual Rumana Building,
-                            Islander Road, Waigani
-                        </p>
 
-                        <p>
-                            Port Moresby, NCD,
-                            Papua New Guinea
-                        </p>
+                        <div class="col-lg-3">
 
-                        <p>
-                            P.O. Box 822,
-                            Vision City 1131
-                        </p>
-                    </div>
+                            <div class="ng-footer-heading">
+                                Office
+                            </div>
 
-                    <div>
-                        <div class="ng-footer-heading">
-                            Business Hours
+                            <div class="ng-footer-text">
+                                Mutual Rumana Building
+                            </div>
+
+                            <div class="ng-footer-text">
+                                Waigani, Port Moresby
+                            </div>
+
+                            <div class="ng-footer-text">
+                                Papua New Guinea
+                            </div>
+
                         </div>
 
-                        <p>
-                            Mon - Fri: 8:00 AM - 5:00 PM
-                        </p>
-
-                        <p>
-                            Saturday: 8:00 AM - 12:00 PM
-                        </p>
-
-                        <p>
-                            Sunday: Closed
-                        </p>
                     </div>
 
-                </div>
 
-                <div class="container ng-footer-bottom">
-                    © NextGen Technology Limited.
-                    All rights reserved.
+                    <hr class="my-4 border-secondary"/>
+
+
+                    <div
+                        class="d-flex flex-column flex-md-row
+                               justify-content-between gap-2
+                               ng-footer-bottom"
+                    >
+
+                        <div>
+                            © NextGen Technology Limited
+                        </div>
+
+                        <div>
+                            OneSuite Business Platform
+                        </div>
+
+                    </div>
+
                 </div>
 
             </footer>
@@ -157,265 +249,184 @@
     </template>
 
 
-    <!-- ============================================================= -->
-    <!-- NEXTGEN PLATFORM HOMEPAGE                                      -->
-    <!-- ============================================================= -->
+    <!-- ====================================================== -->
+    <!-- HOMEPAGE                                               -->
+    <!-- ====================================================== -->
 
     <template
-        id="nextgen_platform_home"
+        id="nextgen_bootstrap_home"
         inherit_id="website.homepage"
-        priority="99"
+        priority="100"
     >
 
         <xpath expr="//div[@id='wrap']" position="replace">
 
-            <div id="wrap" class="oe_structure ng-platform-home">
+            <div id="wrap" class="oe_structure">
 
-                <!-- HERO -->
+
+                <!-- ========================================== -->
+                <!-- HERO                                       -->
+                <!-- ========================================== -->
 
                 <section class="ng-hero">
 
-                    <div class="container">
+                    <div class="container py-5">
 
-                        <div class="ng-eyebrow">
-                            NEXTGEN TECHNOLOGY LIMITED
-                        </div>
+                        <div class="row align-items-center py-lg-5 g-5">
 
-                        <h1>
-                            One Platform.
-                            Connected Business.
-                        </h1>
+                            <div class="col-lg-7">
 
-                        <p class="ng-hero-text">
-                            Access NextGen business systems,
-                            purchasing, ERP, CRM, inventory,
-                            operations and support from one
-                            central platform.
-                        </p>
-
-                        <div class="ng-buttons">
-
-                            <a
-                                href="/platform"
-                                class="ng-btn ng-btn-primary"
-                            >
-                                Open NextGen Platform
-                            </a>
-
-                            <a
-                                href="https://nextgenpng.net"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="ng-btn ng-btn-secondary"
-                            >
-                                Corporate Website
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <!-- BUSINESS SYSTEMS -->
-
-                <section class="ng-section">
-
-                    <div class="container">
-
-                        <div class="ng-section-heading">
-                            <span>CONNECTED SYSTEMS</span>
-
-                            <h2>
-                                NextGen Business Applications
-                            </h2>
-
-                            <p>
-                                Each application remains
-                                independently deployed while
-                                being accessible through the
-                                NextGen Platform.
-                            </p>
-                        </div>
-
-                        <div class="ng-card-grid">
-
-                            <a
-                                class="ng-card"
-                                href="/platform"
-                            >
-                                <div class="ng-card-tag">
-                                    CORE
+                                <div class="ng-kicker mb-3">
+                                    NEXTGEN TECHNOLOGY LIMITED
                                 </div>
 
-                                <h3>
-                                    NextGen Platform
-                                </h3>
+                                <h1 class="display-3 fw-bold text-white mb-4 ng-hero-title">
+                                    One Platform.
+                                    <br/>
+                                    Connected Business.
+                                </h1>
 
-                                <p>
-                                    Finance, sales, purchasing,
-                                    CRM, projects, HR,
-                                    approvals and reporting.
+                                <p class="lead ng-hero-copy mb-4">
+                                    OneSuite brings together your core
+                                    business applications, operations and
+                                    connected NextGen platforms in one
+                                    professional workspace.
                                 </p>
 
-                                <span>
-                                    Open Platform →
-                                </span>
-                            </a>
 
+                                <div class="d-flex flex-wrap gap-3">
 
-                            <a
-                                class="ng-card"
-                                href="https://nexerp.nextgenpng.net"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="ng-card-tag">
-                                    ERP
+                                    <a
+                                        href="/onesuite"
+                                        class="btn btn-danger btn-lg px-4"
+                                    >
+                                        Open OneSuite
+                                    </a>
+
+                                    <a
+                                        href="#applications"
+                                        class="btn btn-outline-light btn-lg px-4"
+                                    >
+                                        Explore Applications
+                                    </a>
+
                                 </div>
 
-                                <h3>
-                                    NexERP
-                                </h3>
-
-                                <p>
-                                    Internal operations,
-                                    CRM, AIMS inventory,
-                                    procurement and management.
-                                </p>
-
-                                <span>
-                                    Open NexERP →
-                                </span>
-                            </a>
+                            </div>
 
 
-                            <a
-                                class="ng-card"
-                                href="https://store.nextgenpng.net"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="ng-card-tag">
-                                    B2B
+                            <div class="col-lg-5">
+
+                                <div class="ng-hero-panel">
+
+                                    <div
+                                        class="d-flex justify-content-between
+                                               align-items-center mb-4"
+                                    >
+
+                                        <div>
+
+                                            <div class="small text-uppercase ng-muted-light">
+                                                Platform
+                                            </div>
+
+                                            <div class="fs-4 fw-semibold text-white">
+                                                OneSuite
+                                            </div>
+
+                                        </div>
+
+
+                                        <span class="ng-status">
+                                            <span class="ng-status-dot"/>
+                                            Live
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="row g-3">
+
+                                        <div class="col-6">
+
+                                            <div class="ng-mini-card">
+
+                                                <i class="fa fa-line-chart mb-3"/>
+
+                                                <div class="fw-semibold">
+                                                    Business
+                                                </div>
+
+                                                <div class="small text-secondary">
+                                                    ERP &amp; operations
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-6">
+
+                                            <div class="ng-mini-card">
+
+                                                <i class="fa fa-shopping-cart mb-3"/>
+
+                                                <div class="fw-semibold">
+                                                    Commerce
+                                                </div>
+
+                                                <div class="small text-secondary">
+                                                    B2B purchasing
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-6">
+
+                                            <div class="ng-mini-card">
+
+                                                <i class="fa fa-cubes mb-3"/>
+
+                                                <div class="fw-semibold">
+                                                    Assets
+                                                </div>
+
+                                                <div class="small text-secondary">
+                                                    Asset management
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-6">
+
+                                            <div class="ng-mini-card">
+
+                                                <i class="fa fa-truck mb-3"/>
+
+                                                <div class="fw-semibold">
+                                                    Tracking
+                                                </div>
+
+                                                <div class="small text-secondary">
+                                                    Fleet &amp; operations
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
-                                <h3>
-                                    NextGen B2B Store
-                                </h3>
-
-                                <p>
-                                    Corporate purchasing,
-                                    approvals, quotations,
-                                    orders and account management.
-                                </p>
-
-                                <span>
-                                    Open B2B Store →
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <!-- OPERATIONS -->
-
-                <section class="ng-section ng-section-alt">
-
-                    <div class="container">
-
-                        <div class="ng-section-heading">
-
-                            <span>
-                                OPERATIONS
-                            </span>
-
-                            <h2>
-                                NextGen Tools &amp; Services
-                            </h2>
-
-                        </div>
-
-                        <div class="ng-card-grid">
-
-                            <a
-                                class="ng-card"
-                                href="https://sms.tidalwavesoftwebsolutions.tech"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="ng-card-tag">
-                                    SMS
-                                </div>
-
-                                <h3>
-                                    SMS Gateway
-                                </h3>
-
-                                <p>
-                                    Messaging and OTP
-                                    infrastructure.
-                                </p>
-
-                                <span>
-                                    Open Gateway →
-                                </span>
-                            </a>
-
-
-                            <a
-                                class="ng-card"
-                                href="https://paperclip.tidalwavesoftwebsolutions.tech"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="ng-card-tag">
-                                    WORK
-                                </div>
-
-                                <h3>
-                                    Paperclip
-                                </h3>
-
-                                <p>
-                                    Internal coordination
-                                    and operational workspace.
-                                </p>
-
-                                <span>
-                                    Open Paperclip →
-                                </span>
-                            </a>
-
-
-                            <a
-                                class="ng-card"
-                                href="https://godseye.tidalwavesoftwebsolutions.tech"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="ng-card-tag">
-                                    MONITOR
-                                </div>
-
-                                <h3>
-                                    God's Eye
-                                </h3>
-
-                                <p>
-                                    Monitoring and operational
-                                    visibility platform.
-                                </p>
-
-                                <span>
-                                    Open System →
-                                </span>
-                            </a>
+                            </div>
 
                         </div>
 
@@ -424,37 +435,293 @@
                 </section>
 
 
-                <!-- INTEGRATION -->
+                <!-- ========================================== -->
+                <!-- APPLICATIONS                               -->
+                <!-- ========================================== -->
 
-                <section class="ng-section">
+                <section
+                    id="applications"
+                    class="py-5 bg-white"
+                >
 
-                    <div class="container">
+                    <div class="container py-lg-4">
 
-                        <div class="ng-integration">
+                        <div
+                            class="row justify-content-between
+                                   align-items-end mb-5"
+                        >
 
-                            <div>
-                                <div class="ng-eyebrow">
-                                    CONNECTED WORKFLOW
+                            <div class="col-lg-7">
+
+                                <div class="ng-kicker text-danger mb-2">
+                                    BUSINESS APPLICATIONS
                                 </div>
 
-                                <h2>
-                                    Systems that work together
+                                <h2 class="display-6 fw-bold mb-3">
+                                    NextGen business systems
                                 </h2>
 
-                                <p>
-                                    B2B purchasing, NextGen
-                                    Platform and NexERP are
-                                    connected through secured
-                                    integration APIs.
+                                <p class="text-secondary mb-0">
+                                    Access approved NextGen applications
+                                    from a single corporate platform.
                                 </p>
+
                             </div>
 
-                            <div class="ng-flow">
-                                <div>B2B Store</div>
-                                <strong>→</strong>
-                                <div>NextGen Platform</div>
-                                <strong>→</strong>
-                                <div>NexERP</div>
+                        </div>
+
+
+                        <div class="row g-4">
+
+
+                            <!-- OneSuite -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="/onesuite"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-th-large"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            CORE
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            OneSuite
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            Central business management,
+                                            finance, operations and workflow.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open OneSuite →
+                                        </span>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- NexERP -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="https://nexerp.nextgenpng.net/"
+                                    target="_blank"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-bar-chart"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            ERP
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            NexERP
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            CRM, AIMS, procurement,
+                                            internal operations and reporting.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open NexERP →
+                                        </span>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- B2B -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="https://store.nextgenpng.net/"
+                                    target="_blank"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-shopping-bag"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            B2B
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            NextGen B2B Store
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            Corporate purchasing,
+                                            approvals, quotations and orders.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open Store →
+                                        </span>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- Assets -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="https://assets.nextgenpng.net/login"
+                                    target="_blank"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-cubes"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            ASSETS
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            Asset Management
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            Asset registry, assignments,
+                                            stock and lifecycle management.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open Assets →
+                                        </span>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- Fleet -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="https://fleettracker.nextgenpng.net/"
+                                    target="_blank"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-truck"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            FLEET
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            Fleet Tracker
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            Fleet visibility, tracking
+                                            and transport operations.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open Fleet →
+                                        </span>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- AI -->
+
+                            <div class="col-md-6 col-xl-4">
+
+                                <a
+                                    href="https://ai.nextgenpng.net/"
+                                    target="_blank"
+                                    class="card ng-app-card h-100 text-decoration-none"
+                                >
+
+                                    <div class="card-body p-4">
+
+                                        <div class="ng-app-icon mb-4">
+                                            <i class="fa fa-cogs"/>
+                                        </div>
+
+                                        <span class="badge ng-badge mb-3">
+                                            DIGITAL
+                                        </span>
+
+                                        <h3 class="h5 text-dark fw-bold">
+                                            NextGen AI
+                                        </h3>
+
+                                        <p class="text-secondary small">
+                                            Intelligent business services
+                                            and digital automation.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                        <span class="ng-card-link">
+                                            Open Platform →
+                                        </span>
+                                    </div>
+
+                                </a>
+
                             </div>
 
                         </div>
@@ -464,49 +731,86 @@
                 </section>
 
 
-                <!-- SUPPORT -->
+                <!-- ========================================== -->
+                <!-- MORE PLATFORMS                              -->
+                <!-- ========================================== -->
 
-                <section class="ng-contact">
+                <section class="py-5 ng-soft">
 
-                    <div class="container">
+                    <div class="container py-lg-4">
 
-                        <div class="ng-section-heading">
-                            <span>CONTACT NEXTGEN</span>
+                        <div class="mb-5">
 
-                            <h2>
-                                Need assistance?
+                            <div class="ng-kicker text-danger mb-2">
+                                NEXTGEN ECOSYSTEM
+                            </div>
+
+                            <h2 class="h2 fw-bold">
+                                Connected services
                             </h2>
+
                         </div>
 
-                        <div class="ng-contact-grid">
 
-                            <div>
-                                <strong>Email</strong>
-                                <p>
-                                    support@nextgenpng.net
-                                </p>
+                        <div class="row g-3">
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <a
+                                    href="https://bilumpay.nextgenpng.net/"
+                                    target="_blank"
+                                    class="ng-service"
+                                >
+                                    <i class="fa fa-credit-card"/>
+                                    <span>BilumPay</span>
+                                    <span>↗</span>
+                                </a>
+
                             </div>
 
-                            <div>
-                                <strong>Office</strong>
-                                <p>
-                                    +675 325 2023
-                                </p>
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <a
+                                    href="https://manage.nextgenpng.net/login.php"
+                                    target="_blank"
+                                    class="ng-service"
+                                >
+                                    <i class="fa fa-briefcase"/>
+                                    <span>Management</span>
+                                    <span>↗</span>
+                                </a>
+
                             </div>
 
-                            <div>
-                                <strong>Support</strong>
-                                <p>
-                                    +675 7733 0000
-                                </p>
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <a
+                                    href="https://nexdomains.nextgenpng.net/"
+                                    target="_blank"
+                                    class="ng-service"
+                                >
+                                    <i class="fa fa-globe"/>
+                                    <span>NexDomains</span>
+                                    <span>↗</span>
+                                </a>
+
                             </div>
 
-                            <div>
-                                <strong>Location</strong>
-                                <p>
-                                    Mutual Rumana Building,
-                                    Waigani, Port Moresby
-                                </p>
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <a
+                                    href="https://turprotrack.nextgenpng.net/"
+                                    target="_blank"
+                                    class="ng-service"
+                                >
+                                    <i class="fa fa-map-marker"/>
+                                    <span>TurProTrack</span>
+                                    <span>↗</span>
+                                </a>
+
                             </div>
 
                         </div>
@@ -514,6 +818,96 @@
                     </div>
 
                 </section>
+
+
+                <!-- ========================================== -->
+                <!-- INTEGRATION                                 -->
+                <!-- ========================================== -->
+
+                <section
+                    id="integration"
+                    class="py-5 bg-white"
+                >
+
+                    <div class="container py-lg-5">
+
+                        <div class="ng-platform-panel">
+
+                            <div class="row align-items-center g-5">
+
+                                <div class="col-lg-6">
+
+                                    <div class="ng-kicker mb-2">
+                                        CONNECTED PLATFORM
+                                    </div>
+
+                                    <h2 class="display-6 fw-bold text-white">
+                                        Systems that work together.
+                                    </h2>
+
+                                    <p class="ng-hero-copy mb-0">
+                                        OneSuite, NexERP and the B2B Store
+                                        operate as connected NextGen business
+                                        systems while remaining independently
+                                        deployable and maintainable.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="col-lg-6">
+
+                                    <div class="ng-process">
+
+                                        <div class="ng-process-item">
+
+                                            <span>01</span>
+
+                                            <div>
+                                                <strong>B2B Store</strong>
+                                                <small>Orders &amp; approvals</small>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="ng-process-line"/>
+
+                                        <div class="ng-process-item">
+
+                                            <span>02</span>
+
+                                            <div>
+                                                <strong>OneSuite</strong>
+                                                <small>Business processing</small>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="ng-process-line"/>
+
+                                        <div class="ng-process-item">
+
+                                            <span>03</span>
+
+                                            <div>
+                                                <strong>NexERP</strong>
+                                                <small>Operations &amp; management</small>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
 
             </div>
 

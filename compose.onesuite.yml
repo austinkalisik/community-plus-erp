@@ -1,0 +1,55 @@
+services:
+
+  db:
+    image: docker.io/library/postgres:16
+    container_name: onesuite-db
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+    volumes:
+      - onesuite-db-data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U odoo -d postgres
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/odoo/Dockerfile
+      args:
+        ODOO_TAG: ${ODOO_TAG:-19.0}
+
+    container_name: onesuite-web
+    restart: unless-stopped
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+    environment:
+      HOST: db
+      PORT: 5432
+      USER: odoo
+      PASSWORD: ${POSTGRES_PASSWORD}
+
+    ports:
+      - "127.0.0.1:18069:8069"
+      - "127.0.0.1:18072:8072"
+
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
+      - onesuite-web-data:/var/lib/odoo
+
+volumes:
+  onesuite-db-data:
+  onesuite-web-data:

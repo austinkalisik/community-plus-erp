@@ -1,0 +1,248 @@
+html,
+body {
+    background: var(--os-bg);
+}
+
+body.os-corporate-ui {
+    color: var(--os-text);
+}
+
+/* ===============================================================
+   TOP NAVIGATION
+   =============================================================== */
+
+.o_main_navbar {
+    min-height: 56px;
+    background: var(--os-surface) !important;
+    border-bottom: 1px solid var(--os-border);
+    box-shadow: var(--os-shadow-xs);
+    color: var(--os-text) !important;
+}
+
+.o_main_navbar,
+.o_main_navbar * {
+    color: var(--os-text);
+}
+
+.o_main_navbar .dropdown-toggle:hover,
+.o_main_navbar button:hover,
+.o_main_navbar a:hover {
+    background: #f3f4f6 !important;
+}
+
+.os-navbar-brand {
+    height: 56px;
+    min-width: 174px;
+    padding: 0 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none !important;
+    border-right: 1px solid var(--os-border);
+    flex-shrink: 0;
+}
+
+.os-navbar-brand__mark {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    font-size: 0;
+}
+
+.os-navbar-brand__mark::before,
+.os-navbar-brand__mark::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    border-radius: 2px;
+    background: var(--os-red);
+}
+
+.os-navbar-brand__mark::before {
+    transform: rotate(48deg);
+}
+
+.os-navbar-brand__mark::after {
+    transform: rotate(-48deg);
+}
+
+.os-navbar-brand__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.os-navbar-brand__name {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -.2px;
+    color: var(--os-black);
+}
+
+.os-navbar-brand__company {
+    margin-top: 3px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: var(--os-muted);
+    text-transform: uppercase;
+}
+
+/* ===============================================================
+   WORKSPACE
+   =============================================================== */
+
+.o_action_manager {
+    background: var(--os-bg);
+}
+
+.o_action_manager > .o_view_controller {
+    background: var(--os-bg);
+}
+
+/* ===============================================================
+   CONTROL PANEL
+   =============================================================== */
+
+.o_control_panel {
+    background: rgba(255,255,255,.98) !important;
+    border-bottom: 1px solid var(--os-border);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.o_control_panel .breadcrumb {
+    font-weight: 650;
+    color: var(--os-text);
+}
+
+.o_control_panel .breadcrumb-item.active {
+    color: var(--os-text);
+}
+
+/* ===============================================================
+   SEARCH
+   =============================================================== */
+
+.o_searchview {
+    background: var(--os-surface) !important;
+    border: 1px solid var(--os-border) !important;
+    border-radius: var(--os-radius-sm) !important;
+    min-height: 36px;
+    transition:
+        border-color var(--os-transition),
+        box-shadow var(--os-transition);
+}
+
+.o_searchview:focus-within {
+    border-color: #aeb4bd !important;
+    box-shadow:
+        0 0 0 3px rgba(17, 19, 24, .05) !important;
+}
+
+/* ===============================================================
+   BUTTONS
+   =============================================================== */
+
+.btn {
+    border-radius: var(--os-radius-sm);
+    font-weight: 650;
+    box-shadow: none;
+    transition:
+        transform var(--os-transition),
+        background-color var(--os-transition),
+        border-color var(--os-transition),
+        box-shadow var(--os-transition);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: var(--os-red) !important;
+    border-color: var(--os-red) !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--os-red-dark) !important;
+    border-color: var(--os-red-dark) !important;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--os-text);
+    border-color: var(--os-border-strong);
+}
+
+/* ===============================================================
+   INPUTS
+   =============================================================== */
+
+.form-control,
+.o_input {
+    border-radius: var(--os-radius-sm) !important;
+    border-color: var(--os-border-strong) !important;
+    background: #fff !important;
+}
+
+.form-control:focus,
+.o_input:focus {
+    border-color: #9da4ae !important;
+    box-shadow:
+        0 0 0 3px rgba(17, 19, 24, .05) !important;
+}
+
+/* ===============================================================
+   DROPDOWNS
+   =============================================================== */
+
+.dropdown-menu {
+    border: 1px solid var(--os-border);
+    border-radius: var(--os-radius);
+    box-shadow: var(--os-shadow);
+    padding: 6px;
+}
+
+.dropdown-item {
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background: #f3f4f6;
+}
+
+/* ===============================================================
+   APPLICATION MENU / DRAWER
+   =============================================================== */
+
+.o_menu_apps,
+.o_app_menu,
+.o_apps_menu {
+    background: #fff !important;
+}
+
+.o_menu_apps .dropdown-menu,
+.o_app_menu .dropdown-menu {
+    border-radius: 0 0 var(--os-radius-lg) 0;
+}
+
+/* ===============================================================
+   BRANDING CLEANUP
+   =============================================================== */
+
+.o_brand_promotion {
+    display: none !important;
+}

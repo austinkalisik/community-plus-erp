@@ -1,0 +1,193 @@
+/*
+ * OneSuite Authentication
+ * NextGen Technology Limited
+ *
+ * Native Odoo 19 Bootstrap forms remain intact.
+ */
+
+:root {
+    --ng-red: #d71920;
+    --ng-red-dark: #b4151b;
+    --ng-text: #171a21;
+    --ng-muted: #667085;
+    --ng-bg: #f5f6f8;
+}
+
+
+/* ---------------------------------------------------------------
+   AUTHENTICATION PAGE BACKGROUND
+   --------------------------------------------------------------- */
+
+body.bg-100 {
+    background:
+        var(--ng-bg) !important;
+}
+
+
+/* ---------------------------------------------------------------
+   NATIVE AUTH CARD
+   --------------------------------------------------------------- */
+
+.o_database_list {
+
+    width:
+        100%;
+
+    max-width:
+        380px !important;
+
+    border:
+        1px solid #e2e6ea !important;
+
+    border-radius:
+        12px !important;
+
+    background:
+        #fff !important;
+
+    box-shadow:
+        0 18px 45px
+        rgba(16, 24, 40, .10) !important;
+}
+
+
+.o_database_list .card-body {
+
+    padding:
+        30px !important;
+}
+
+
+/* ---------------------------------------------------------------
+   COMPANY LOGO
+   --------------------------------------------------------------- */
+
+.o_database_list
+img[alt="Logo"] {
+
+    max-height:
+        84px !important;
+
+    max-width:
+        240px !important;
+
+    width:
+        auto !important;
+
+    object-fit:
+        contain;
+}
+
+
+/* ---------------------------------------------------------------
+   FORM LABELS
+   --------------------------------------------------------------- */
+
+.oe_login_form .form-label,
+.oe_signup_form .form-label,
+.oe_reset_password_form .form-label {
+
+    color:
+        var(--ng-text);
+
+    font-weight:
+        600;
+}
+
+
+/* ---------------------------------------------------------------
+   INPUTS
+   --------------------------------------------------------------- */
+
+.oe_login_form .form-control,
+.oe_signup_form .form-control,
+.oe_reset_password_form .form-control {
+
+    min-height:
+        42px;
+
+    border-radius:
+        7px !important;
+}
+
+
+.oe_login_form .form-control:focus,
+.oe_signup_form .form-control:focus,
+.oe_reset_password_form .form-control:focus {
+
+    border-color:
+        var(--ng-red) !important;
+
+    box-shadow:
+        0 0 0 .2rem
+        rgba(215, 25, 32, .10) !important;
+}
+
+
+/* ---------------------------------------------------------------
+   PRIMARY BUTTONS
+   --------------------------------------------------------------- */
+
+.oe_login_form .btn-primary,
+.oe_signup_form .btn-primary,
+.oe_reset_password_form .btn-primary {
+
+    min-height:
+        42px;
+
+    background:
+        var(--ng-red) !important;
+
+    border-color:
+        var(--ng-red) !important;
+
+    color:
+        #fff !important;
+
+    border-radius:
+        7px !important;
+
+    font-weight:
+        700;
+}
+
+
+.oe_login_form .btn-primary:hover,
+.oe_signup_form .btn-primary:hover,
+.oe_reset_password_form .btn-primary:hover {
+
+    background:
+        var(--ng-red-dark) !important;
+
+    border-color:
+        var(--ng-red-dark) !important;
+}
+
+
+/* ---------------------------------------------------------------
+   LINKS
+   --------------------------------------------------------------- */
+
+.oe_login_form a,
+.oe_signup_form a,
+.oe_reset_password_form a {
+
+    color:
+        var(--ng-red-dark);
+}
+
+
+/* ---------------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------------- */
+
+.o_database_list
+a[href*="odoo.com"] {
+
+    color:
+        var(--ng-muted);
+
+    text-decoration:
+        none;
+}
+

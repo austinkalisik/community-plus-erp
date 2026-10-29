@@ -1,0 +1,175 @@
+/* ===============================================================
+   FORM VIEWS
+   =============================================================== */
+
+.o_form_view {
+    background: var(--os-bg);
+}
+
+.o_form_view .o_form_sheet_bg {
+    background: var(--os-bg);
+    padding: 22px;
+}
+
+.o_form_view .o_form_sheet {
+    border: 1px solid var(--os-border);
+    border-radius: var(--os-radius);
+    box-shadow: var(--os-shadow-xs);
+    background: #fff;
+}
+
+.o_form_view .o_horizontal_separator {
+    color: var(--os-text);
+    font-weight: 730;
+}
+
+.o_form_view .nav-tabs {
+    border-bottom-color: var(--os-border);
+}
+
+.o_form_view .nav-tabs .nav-link {
+    color: var(--os-muted);
+    font-weight: 620;
+}
+
+.o_form_view .nav-tabs .nav-link.active {
+    color: var(--os-text);
+    border-bottom-color: var(--os-red);
+}
+
+/* ===============================================================
+   LIST / TABLE VIEWS
+   =============================================================== */
+
+.o_list_renderer {
+    background: #fff;
+}
+
+.o_list_renderer .o_list_table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.o_list_renderer .o_list_table thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.o_list_renderer .o_list_table thead th {
+    background: #f8f9fa !important;
+    border-bottom: 1px solid var(--os-border) !important;
+    color: #475467;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .2px;
+}
+
+.o_list_renderer .o_list_table tbody tr {
+    transition: background-color var(--os-transition);
+}
+
+.o_list_renderer .o_list_table tbody tr:hover {
+    background: #fafafa !important;
+}
+
+.o_list_renderer .o_list_table tbody td {
+    border-bottom-color: #edf0f2;
+}
+
+/* ===============================================================
+   KANBAN
+   =============================================================== */
+
+.o_kanban_renderer {
+    background: var(--os-bg);
+    gap: 12px;
+}
+
+.o_kanban_renderer .o_kanban_record {
+    border: 1px solid var(--os-border) !important;
+    border-radius: var(--os-radius) !important;
+    box-shadow: var(--os-shadow-xs) !important;
+    background: #fff !important;
+    transition:
+        transform var(--os-transition),
+        box-shadow var(--os-transition),
+        border-color var(--os-transition);
+}
+
+.o_kanban_renderer .o_kanban_record:hover {
+    transform: translateY(-2px);
+    border-color: #cfd3d8 !important;
+    box-shadow: var(--os-shadow-sm) !important;
+}
+
+/* ===============================================================
+   CHATTER
+   =============================================================== */
+
+.o_Chatter,
+.o-mail-Chatter {
+    border-left-color: var(--os-border) !important;
+    background: #fbfbfc;
+}
+
+/* ===============================================================
+   MODALS
+   =============================================================== */
+
+.modal-backdrop.show {
+    opacity: .32;
+}
+
+.modal-content {
+    overflow: hidden;
+    border: 1px solid var(--os-border);
+    border-radius: var(--os-radius-lg);
+    box-shadow:
+        0 24px 70px rgba(16,24,40,.20);
+}
+
+.modal-header {
+    border-bottom-color: var(--os-border);
+}
+
+.modal-footer {
+    border-top-color: var(--os-border);
+    background: #fafafa;
+}
+
+/* ===============================================================
+   NOTIFICATIONS
+   =============================================================== */
+
+.o_notification_manager .o_notification {
+    border: 1px solid var(--os-border);
+    border-radius: var(--os-radius);
+    box-shadow: var(--os-shadow);
+}
+
+/* ===============================================================
+   BADGES
+   =============================================================== */
+
+.badge {
+    border-radius: 999px;
+    font-weight: 650;
+}
+
+/* ===============================================================
+   LINKS
+   =============================================================== */
+
+.o_web_client a:not(.btn):not(.dropdown-item) {
+    text-decoration-thickness: 1px;
+}
+
+/* ===============================================================
+   ACCESSIBILITY
+   =============================================================== */
+
+:focus-visible {
+    outline: 2px solid var(--os-red) !important;
+    outline-offset: 2px;
+}

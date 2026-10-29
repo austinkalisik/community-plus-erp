@@ -1,14 +1,14 @@
-from odoo import http
-from odoo.http import request
+"""
+NextGen platform branding.
 
+Authentication is intentionally NOT implemented here.
 
-class NextGenPlatformController(http.Controller):
+Native Odoo routes remain authoritative:
 
-    @http.route(
-        ["/platform", "/nextgen"],
-        type="http",
-        auth="user",
-        website=False,
-    )
-    def nextgen_platform(self, **kwargs):
-        return request.redirect("/odoo")
+    /web/login
+    /web/signup
+    /web/reset_password
+
+Friendly NextGen aliases are provided by
+the nextgen_auth_branding module.
+"""

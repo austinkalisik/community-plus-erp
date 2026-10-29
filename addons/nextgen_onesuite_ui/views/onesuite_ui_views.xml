@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record
+        id="action_onesuite_home"
+        model="ir.actions.client"
+    >
+        <field name="name">OneSuite</field>
+        <field name="tag">
+            nextgen_onesuite_dashboard
+        </field>
+    </record>
+
+
+    <!-- Rebrand existing NextGen root as OneSuite -->
+
+    <record
+        id="nextgen_systems_hub.menu_nextgen_systems_root"
+        model="ir.ui.menu"
+    >
+        <field name="name">OneSuite</field>
+        <field
+            name="action"
+            ref="action_onesuite_home"
+        />
+    </record>
+
+
+    <menuitem
+        id="menu_onesuite_home"
+        name="Home"
+        parent="nextgen_systems_hub.menu_nextgen_systems_root"
+        action="action_onesuite_home"
+        sequence="1"
+        groups="base.group_user"
+    />
+
+</odoo>

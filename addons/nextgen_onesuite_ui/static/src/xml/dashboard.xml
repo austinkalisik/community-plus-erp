@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+<t t-name="nextgen_onesuite_ui.OneSuiteDashboard">
+
+    <div class="os-dashboard">
+
+        <div class="os-dashboard__container">
+
+            <!-- ==================================================== -->
+            <!-- HERO                                                 -->
+            <!-- ==================================================== -->
+
+            <section class="os-dashboard__hero">
+
+                <div class="os-dashboard__eyebrow">
+                    NEXTGEN TECHNOLOGY LIMITED
+                </div>
+
+                <h1 class="os-dashboard__title">
+                    OneSuite
+                </h1>
+
+                <p class="os-dashboard__description">
+                    Your central business workspace for finance,
+                    sales, purchasing, operations, projects,
+                    employees and connected NextGen platforms.
+                </p>
+
+                <div class="os-dashboard__status">
+                    <span class="os-dashboard__status-dot"/>
+                    Production
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================== -->
+            <!-- WORKSPACE                                            -->
+            <!-- ==================================================== -->
+
+            <section class="os-section">
+
+                <div class="os-section__header">
+                    <div>
+                        <h2 class="os-section__title">
+                            Business Workspace
+                        </h2>
+
+                        <p class="os-section__subtitle">
+                            Core areas managed inside OneSuite.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="os-workspace-grid">
+
+                    <div class="os-workspace-card">
+                        <div class="os-workspace-card__label">
+                            Commercial
+                        </div>
+
+                        <div class="os-workspace-card__title">
+                            Sales &amp; CRM
+                        </div>
+
+                        <p class="os-workspace-card__text">
+                            Customers, opportunities,
+                            quotations and sales operations.
+                        </p>
+                    </div>
+
+
+                    <div class="os-workspace-card">
+                        <div class="os-workspace-card__label">
+                            Financial
+                        </div>
+
+                        <div class="os-workspace-card__title">
+                            Finance &amp; Accounting
+                        </div>
+
+                        <p class="os-workspace-card__text">
+                            Invoicing, accounting,
+                            receivables and business reporting.
+                        </p>
+                    </div>
+
+
+                    <div class="os-workspace-card">
+                        <div class="os-workspace-card__label">
+                            Operations
+                        </div>
+
+                        <div class="os-workspace-card__title">
+                            Purchasing &amp; Inventory
+                        </div>
+
+                        <p class="os-workspace-card__text">
+                            Procurement, suppliers,
+                            products and inventory control.
+                        </p>
+                    </div>
+
+
+                    <div class="os-workspace-card">
+                        <div class="os-workspace-card__label">
+                            Organization
+                        </div>
+
+                        <div class="os-workspace-card__title">
+                            Projects &amp; People
+                        </div>
+
+                        <p class="os-workspace-card__text">
+                            Projects, employees,
+                            tasks and internal operations.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================== -->
+            <!-- NEXTGEN PLATFORMS                                    -->
+            <!-- ==================================================== -->
+
+            <section class="os-section">
+
+                <div class="os-section__header">
+
+                    <div>
+                        <h2 class="os-section__title">
+                            NextGen Platforms
+                        </h2>
+
+                        <p class="os-section__subtitle">
+                            Approved NextGen business systems.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="os-platform-grid">
+
+                    <a
+                        class="os-platform-card"
+                        href="https://nexerp.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                NE
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            NexERP
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Enterprise operations,
+                            CRM, AIMS and business management.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch NexERP
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://store.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                B2B
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            B2B Store
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Corporate purchasing,
+                            approvals and order management.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch Store
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://assets.nextgenpng.net/login"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                AM
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            Asset Management
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Asset registry,
+                            assignments and lifecycle management.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch Assets
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://ai.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                AI
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            NextGen AI
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            NextGen intelligent services
+                            and business AI platform.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch AI
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://fleettracker.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                FT
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            Fleet Tracker
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Fleet visibility,
+                            transport operations and tracking.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch Fleet
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://turprotrack.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                TP
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            TurProTrack
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Tracking and operational
+                            monitoring platform.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch TurProTrack
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://bilumpay.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                BP
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            BilumPay
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            NextGen digital payment
+                            and finance platform.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch BilumPay
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://manage.nextgenpng.net/login.php"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                MP
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            Management Portal
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Administration and management
+                            services for NextGen.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch Management
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://nexdomains.nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                ND
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            NexDomains
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            NextGen domains and
+                            digital services platform.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Launch NexDomains
+                        </div>
+                    </a>
+
+
+                    <a
+                        class="os-platform-card"
+                        href="https://nextgenpng.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="os-platform-card__top">
+                            <span class="os-platform-card__icon">
+                                NG
+                            </span>
+                            <span class="os-platform-card__external">
+                                ↗
+                            </span>
+                        </div>
+
+                        <div class="os-platform-card__name">
+                            NextGen Website
+                        </div>
+
+                        <div class="os-platform-card__description">
+                            Official NextGen Technology
+                            corporate website.
+                        </div>
+
+                        <div class="os-platform-card__footer">
+                            Visit Website
+                        </div>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- COMPANY -->
+
+            <div class="os-company-strip">
+
+                <div>
+                    <div class="os-company-strip__name">
+                        NextGen Technology Limited
+                    </div>
+
+                    <div class="os-company-strip__details">
+                        Port Moresby, Papua New Guinea
+                    </div>
+                </div>
+
+                <a
+                    class="os-company-strip__link"
+                    href="https://nextgenpng.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Corporate Website ↗
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</t>
+
+</templates>

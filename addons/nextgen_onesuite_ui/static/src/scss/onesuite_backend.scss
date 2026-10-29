@@ -1,0 +1,1114 @@
+
+/* ==================================================================
+   ONESUITE DESIGN SYSTEM
+   NextGen Technology Limited
+   ================================================================== */
+
+:root {
+
+    --os-red: #d71920;
+    --os-red-hover: #ba151b;
+    --os-red-soft: #fff1f2;
+
+    --os-black: #14171c;
+    --os-charcoal: #1c2027;
+    --os-charcoal-2: #242932;
+
+    --os-bg: #f4f5f7;
+    --os-bg-secondary: #f8f9fa;
+
+    --os-surface: #ffffff;
+    --os-surface-hover: #f9fafb;
+
+    --os-border: #e2e5e9;
+    --os-border-strong: #ccd1d7;
+
+    --os-text: #171a21;
+    --os-text-secondary: #475467;
+    --os-muted: #667085;
+
+    --os-success: #16865c;
+    --os-warning: #c47a08;
+    --os-danger: #c9272f;
+    --os-info: #2864a7;
+
+    --os-radius-xs: 5px;
+    --os-radius-sm: 7px;
+    --os-radius-md: 10px;
+    --os-radius-lg: 14px;
+
+    --os-shadow-xs:
+        0 1px 2px rgba(16,24,40,.04);
+
+    --os-shadow-sm:
+        0 2px 7px rgba(16,24,40,.07);
+
+    --os-shadow-md:
+        0 12px 30px rgba(16,24,40,.10);
+
+    --os-transition:
+        150ms cubic-bezier(.2,.7,.2,1);
+}
+
+
+/* ==================================================================
+   GLOBAL
+   ================================================================== */
+
+html,
+body,
+.o_web_client {
+
+    background:
+        var(--os-bg) !important;
+
+    color:
+        var(--os-text);
+}
+
+
+body.os-onesuite-ui {
+
+    font-feature-settings:
+        "kern" 1,
+        "liga" 1;
+}
+
+
+/* ==================================================================
+   TOP NAVIGATION
+   ================================================================== */
+
+.o_main_navbar {
+
+    min-height: 58px !important;
+
+    background:
+        var(--os-surface) !important;
+
+    border-bottom:
+        1px solid var(--os-border) !important;
+
+    box-shadow:
+        var(--os-shadow-xs);
+
+    color:
+        var(--os-text) !important;
+}
+
+
+.o_main_navbar > * {
+
+    min-height: 58px;
+}
+
+
+.o_main_navbar button,
+.o_main_navbar a {
+
+    color:
+        var(--os-text) !important;
+
+    transition:
+        background-color var(--os-transition),
+        color var(--os-transition);
+}
+
+
+.o_main_navbar button:hover,
+.o_main_navbar a:hover {
+
+    background:
+        #f3f4f6 !important;
+}
+
+
+/* OneSuite brand */
+
+.os-suite-brand {
+
+    height: 58px;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        11px;
+
+    padding:
+        0 18px;
+
+    border-right:
+        1px solid var(--os-border);
+
+    text-decoration:
+        none !important;
+
+    flex-shrink:
+        0;
+}
+
+
+.os-suite-brand__mark {
+
+    width:
+        30px;
+
+    height:
+        30px;
+
+    position:
+        relative;
+
+    flex:
+        0 0 30px;
+}
+
+
+.os-suite-brand__mark::before,
+.os-suite-brand__mark::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        12px;
+
+    left:
+        2px;
+
+    width:
+        27px;
+
+    height:
+        6px;
+
+    border-radius:
+        2px;
+
+    background:
+        var(--os-red);
+}
+
+
+.os-suite-brand__mark::before {
+
+    transform:
+        rotate(48deg);
+}
+
+
+.os-suite-brand__mark::after {
+
+    transform:
+        rotate(-48deg);
+}
+
+
+.os-suite-brand__copy {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    line-height:
+        1.05;
+}
+
+
+.os-suite-brand__title {
+
+    color:
+        var(--os-black);
+
+    font-size:
+        15px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -.25px;
+}
+
+
+.os-suite-brand__company {
+
+    margin-top:
+        4px;
+
+    color:
+        var(--os-muted);
+
+    font-size:
+        8px;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        .8px;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* ==================================================================
+   OCA APP LAUNCHER
+   ================================================================== */
+
+.o_grid_apps_menu__button {
+
+    width:
+        58px !important;
+
+    height:
+        58px !important;
+
+    color:
+        var(--os-text) !important;
+}
+
+
+.app-menu-container {
+
+    background:
+        var(--os-bg) !important;
+
+    padding-top:
+        40px !important;
+
+    padding-bottom:
+        50px !important;
+
+    align-content:
+        flex-start !important;
+}
+
+
+.app-menu-container::before {
+
+    content:
+        "OneSuite Applications";
+
+    width:
+        100%;
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--os-text);
+
+    font-size:
+        28px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -.8px;
+}
+
+
+.app-menu-container::after {
+
+    content:
+        "Business applications and NextGen platforms";
+
+    position:
+        absolute;
+
+    margin-top:
+        38px;
+
+    color:
+        var(--os-muted);
+
+    font-size:
+        13px;
+}
+
+
+.o_grid_apps_menu .o-app-menu-list {
+
+    margin-top:
+        48px;
+
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(150px,1fr)
+        ) !important;
+
+    gap:
+        14px !important;
+}
+
+
+.o_grid_apps_menu .o-app-menu-list > a {
+
+    min-height:
+        142px;
+
+    padding:
+        18px 16px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        flex-start !important;
+
+    justify-content:
+        space-between;
+
+    background:
+        #fff;
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-md);
+
+    box-shadow:
+        var(--os-shadow-xs);
+
+    text-decoration:
+        none !important;
+
+    transition:
+        transform var(--os-transition),
+        border-color var(--os-transition),
+        box-shadow var(--os-transition);
+}
+
+
+.o_grid_apps_menu .o-app-menu-list > a:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        #c5cad1;
+
+    box-shadow:
+        var(--os-shadow-sm);
+}
+
+
+.o-app-menu-item__icon {
+
+    width:
+        44px !important;
+
+    height:
+        44px !important;
+
+    border-radius:
+        10px !important;
+}
+
+
+.o-app-menu-item__name {
+
+    width:
+        100%;
+
+    margin-top:
+        15px;
+
+    color:
+        var(--os-text) !important;
+
+    font-size:
+        13px !important;
+
+    font-weight:
+        700;
+
+    text-align:
+        left !important;
+}
+
+
+/* ==================================================================
+   APP MENU SEARCH
+   ================================================================== */
+
+.app-menu-container input {
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border-strong) !important;
+
+    border-radius:
+        var(--os-radius-sm) !important;
+
+    min-height:
+        42px;
+}
+
+
+/* ==================================================================
+   COMMAND PALETTE
+   ================================================================== */
+
+.o_command_palette_root {
+
+    font-family:
+        inherit;
+}
+
+
+.o_command_palette .modal-content,
+.o_command_palette_root {
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-lg) !important;
+
+    box-shadow:
+        0 30px 80px rgba(16,24,40,.22);
+}
+
+
+.o_command_palette_search {
+
+    border-bottom:
+        1px solid var(--os-border);
+}
+
+
+.o_command_palette_exit .btn {
+
+    border-radius:
+        var(--os-radius-sm);
+}
+
+
+/* ==================================================================
+   CONTROL PANEL
+   ================================================================== */
+
+.o_control_panel {
+
+    background:
+        rgba(255,255,255,.98) !important;
+
+    border-bottom:
+        1px solid var(--os-border) !important;
+
+    padding-top:
+        10px !important;
+
+    padding-bottom:
+        10px !important;
+}
+
+
+.o_control_panel .breadcrumb {
+
+    font-weight:
+        700;
+
+    color:
+        var(--os-text);
+}
+
+
+.o_searchview {
+
+    min-height:
+        38px;
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border-strong) !important;
+
+    border-radius:
+        var(--os-radius-sm) !important;
+
+    box-shadow:
+        none !important;
+}
+
+
+.o_searchview:focus-within {
+
+    border-color:
+        #aab0b8 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(23,26,33,.05)
+        !important;
+}
+
+
+/* ==================================================================
+   BUTTONS
+   ================================================================== */
+
+.btn {
+
+    border-radius:
+        var(--os-radius-sm) !important;
+
+    font-weight:
+        650;
+
+    box-shadow:
+        none;
+
+    transition:
+        transform var(--os-transition),
+        box-shadow var(--os-transition),
+        background var(--os-transition);
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-1px);
+}
+
+
+.btn:active {
+
+    transform:
+        translateY(0);
+}
+
+
+.btn-primary {
+
+    color:
+        #fff !important;
+
+    background:
+        var(--os-red) !important;
+
+    border-color:
+        var(--os-red) !important;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+
+    background:
+        var(--os-red-hover) !important;
+
+    border-color:
+        var(--os-red-hover) !important;
+}
+
+
+.btn-secondary {
+
+    color:
+        var(--os-text) !important;
+
+    background:
+        #fff !important;
+
+    border-color:
+        var(--os-border-strong) !important;
+}
+
+
+/* ==================================================================
+   FORMS
+   ================================================================== */
+
+.o_form_view {
+
+    background:
+        var(--os-bg) !important;
+}
+
+
+.o_form_view .o_form_sheet_bg {
+
+    background:
+        var(--os-bg) !important;
+
+    padding:
+        24px !important;
+}
+
+
+.o_form_view .o_form_sheet {
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-md);
+
+    box-shadow:
+        var(--os-shadow-xs);
+}
+
+
+.o_form_view .o_horizontal_separator {
+
+    color:
+        var(--os-text) !important;
+
+    font-weight:
+        750;
+}
+
+
+.o_form_view .nav-tabs {
+
+    border-bottom:
+        1px solid var(--os-border);
+}
+
+
+.o_form_view .nav-link {
+
+    color:
+        var(--os-muted);
+
+    font-weight:
+        650;
+}
+
+
+.o_form_view .nav-link.active {
+
+    color:
+        var(--os-text);
+
+    border-bottom-color:
+        var(--os-red) !important;
+}
+
+
+/* ==================================================================
+   INPUTS
+   ================================================================== */
+
+.form-control,
+.o_input {
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border-strong)
+        !important;
+
+    border-radius:
+        var(--os-radius-sm) !important;
+}
+
+
+.form-control:focus,
+.o_input:focus {
+
+    border-color:
+        #9ea5ae !important;
+
+    box-shadow:
+        0 0 0 3px rgba(17,19,24,.05)
+        !important;
+}
+
+
+/* ==================================================================
+   LISTS / TABLES
+   ================================================================== */
+
+.o_list_renderer {
+
+    background:
+        #fff !important;
+}
+
+
+.o_list_renderer .o_list_table {
+
+    border-collapse:
+        separate;
+
+    border-spacing:
+        0;
+}
+
+
+.o_list_renderer .o_list_table thead {
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        3;
+}
+
+
+.o_list_renderer .o_list_table thead th {
+
+    background:
+        #f7f8f9 !important;
+
+    color:
+        #475467 !important;
+
+    border-bottom:
+        1px solid var(--os-border)
+        !important;
+
+    font-size:
+        11px;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        .15px;
+}
+
+
+.o_list_renderer .o_list_table tbody td {
+
+    border-bottom-color:
+        #edf0f2 !important;
+
+    vertical-align:
+        middle;
+}
+
+
+.o_list_renderer .o_list_table tbody tr {
+
+    transition:
+        background-color var(--os-transition);
+}
+
+
+.o_list_renderer .o_list_table tbody tr:hover {
+
+    background:
+        #fafafa !important;
+}
+
+
+/* ==================================================================
+   KANBAN
+   ================================================================== */
+
+.o_kanban_renderer {
+
+    background:
+        var(--os-bg) !important;
+
+    gap:
+        12px;
+}
+
+
+.o_kanban_renderer .o_kanban_record {
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border) !important;
+
+    border-radius:
+        var(--os-radius-md) !important;
+
+    box-shadow:
+        var(--os-shadow-xs) !important;
+
+    transition:
+        transform var(--os-transition),
+        box-shadow var(--os-transition),
+        border-color var(--os-transition);
+}
+
+
+.o_kanban_renderer .o_kanban_record:hover {
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        #c7ccd2 !important;
+
+    box-shadow:
+        var(--os-shadow-sm) !important;
+}
+
+
+/* ==================================================================
+   DROPDOWNS
+   ================================================================== */
+
+.dropdown-menu {
+
+    padding:
+        6px;
+
+    background:
+        #fff;
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-md) !important;
+
+    box-shadow:
+        var(--os-shadow-md);
+}
+
+
+.dropdown-item {
+
+    border-radius:
+        6px;
+
+    padding-top:
+        8px;
+
+    padding-bottom:
+        8px;
+}
+
+
+.dropdown-item:hover {
+
+    background:
+        #f3f4f6;
+}
+
+
+/* ==================================================================
+   MODALS
+   ================================================================== */
+
+.modal-backdrop.show {
+
+    opacity:
+        .34;
+}
+
+
+.modal-content {
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-lg) !important;
+
+    box-shadow:
+        0 28px 75px rgba(16,24,40,.20);
+}
+
+
+.modal-header {
+
+    border-bottom:
+        1px solid var(--os-border);
+}
+
+
+.modal-footer {
+
+    background:
+        #fafafa;
+
+    border-top:
+        1px solid var(--os-border);
+}
+
+
+/* ==================================================================
+   CHATTER
+   ================================================================== */
+
+.o-mail-Form-chatter,
+.o-mail-Chatter {
+
+    background:
+        #fafbfc !important;
+
+    border-left-color:
+        var(--os-border) !important;
+}
+
+
+/* ==================================================================
+   NOTIFICATIONS
+   ================================================================== */
+
+.o_notification_manager .o_notification {
+
+    background:
+        #fff !important;
+
+    border:
+        1px solid var(--os-border);
+
+    border-radius:
+        var(--os-radius-md);
+
+    box-shadow:
+        var(--os-shadow-md);
+}
+
+
+/* ==================================================================
+   STATUS / BADGES
+   ================================================================== */
+
+.badge {
+
+    border-radius:
+        999px !important;
+
+    font-weight:
+        650;
+}
+
+
+/* ==================================================================
+   ACCESSIBILITY
+   ================================================================== */
+
+:focus-visible {
+
+    outline:
+        2px solid var(--os-red) !important;
+
+    outline-offset:
+        2px;
+}
+
+
+/* ==================================================================
+   BRAND CLEANUP
+   ================================================================== */
+
+.o_brand_promotion {
+
+    display:
+        none !important;
+}
+
+
+/* ==================================================================
+   MOBILE
+   ================================================================== */
+
+@media (max-width: 768px) {
+
+    .os-suite-brand__company {
+
+        display:
+            none;
+    }
+
+
+    .os-suite-brand {
+
+        padding:
+            0 10px;
+    }
+
+
+    .o_form_view .o_form_sheet_bg {
+
+        padding:
+            10px !important;
+    }
+
+
+    .app-menu-container {
+
+        padding:
+            20px 14px !important;
+    }
+
+
+    .o_grid_apps_menu .o-app-menu-list {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            ) !important;
+    }
+
+}
+
+
+/* ==================================================================
+   REDUCED MOTION
+   ================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+    }
+
+
+    .o_kanban_record:hover,
+    .o-app-menu-list > a:hover,
+    .btn:hover {
+
+        transform:
+            none !important;
+    }
+
+}
+

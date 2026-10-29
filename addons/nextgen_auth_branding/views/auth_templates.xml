@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <!-- ====================================================== -->
+    <!-- Browser/product title                                  -->
+    <!-- ====================================================== -->
+
+    <template
+        id="onesuite_browser_title"
+        inherit_id="web.layout"
+        name="OneSuite Browser Title"
+        priority="200"
+    >
+        <xpath expr="//title" position="replace">
+            <title>OneSuite | NextGen Technology Limited</title>
+        </xpath>
+    </template>
+
+
+    <!-- ====================================================== -->
+    <!-- Native login layout branding                           -->
+    <!-- ====================================================== -->
+
+    <template
+        id="onesuite_native_login_layout"
+        inherit_id="web.login_layout"
+        name="OneSuite Native Login Layout"
+        priority="200"
+    >
+
+        <!-- Use the existing company logo and add product name -->
+
+        <xpath expr="//img[@alt='Logo']" position="after">
+
+            <div class="mt-3">
+
+                <div
+                    style="
+                        font-size:22px;
+                        font-weight:800;
+                        color:#171a21;
+                        letter-spacing:-0.4px;
+                    "
+                >
+                    OneSuite
+                </div>
+
+                <div
+                    style="
+                        margin-top:4px;
+                        font-size:9px;
+                        font-weight:700;
+                        letter-spacing:1px;
+                        color:#667085;
+                    "
+                >
+                    NEXTGEN TECHNOLOGY LIMITED
+                </div>
+
+            </div>
+
+        </xpath>
+
+
+        <!-- Remove visible upstream branding only -->
+
+        <xpath
+            expr="//a[contains(@href, 'odoo.com')]"
+            position="replace"
+        >
+            <span
+                style="
+                    font-size:11px;
+                    color:#667085;
+                "
+            >
+                OneSuite by NextGen Technology Limited
+            </span>
+        </xpath>
+
+
+        <!--
+            Authentication-only CSS.
+
+            Deliberately inline so there is:
+            - no new asset bundle
+            - no cache problem
+            - no extra JS
+            - no frontend compilation delay
+        -->
+
+        <xpath
+            expr="//div[@class='container py-5']"
+            position="before"
+        >
+
+            <style>
+
+                /*
+                 * Website branding must never appear
+                 * around the authentication card.
+                 */
+
+                body.bg-100 #wrapwrap > header,
+                body.bg-100 #wrapwrap > footer,
+                body.bg-100 .ng-navbar,
+                body.bg-100 .ng-header,
+                body.bg-100 .ng-footer {
+                    display: none !important;
+                }
+
+
+                html,
+                body.bg-100,
+                body.bg-100 #wrapwrap {
+                    min-height: 100% !important;
+                    background: #f5f6f8 !important;
+                }
+
+
+                body.bg-100 #wrapwrap > main {
+                    min-height: 100vh !important;
+
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+
+                    background: #f5f6f8 !important;
+                }
+
+
+                body.bg-100 .container.py-5 {
+                    width: 100% !important;
+
+                    padding-top: 32px !important;
+                    padding-bottom: 32px !important;
+                }
+
+
+                body.bg-100 .o_database_list {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+
+                    max-width: 360px !important;
+
+                    background: #ffffff !important;
+
+                    border:
+                        1px solid #e2e6ea !important;
+
+                    border-radius:
+                        12px !important;
+
+                    box-shadow:
+                        0 16px 45px
+                        rgba(16,24,40,.10) !important;
+                }
+
+
+                body.bg-100 .o_database_list .card-body {
+                    padding: 28px !important;
+                }
+
+
+                /*
+                 * Most important repair:
+                 * never allow the actual native login form
+                 * to remain hidden.
+                 */
+
+                body.bg-100 .oe_login_form {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+
+
+                body.bg-100 .oe_signup_form,
+                body.bg-100 .oe_reset_password_form {
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+
+
+                body.bg-100 .form-control {
+                    min-height: 42px;
+                    border-radius: 7px !important;
+                }
+
+
+                body.bg-100 .form-control:focus {
+                    border-color: #d71920 !important;
+
+                    box-shadow:
+                        0 0 0 .2rem
+                        rgba(215,25,32,.10) !important;
+                }
+
+
+                body.bg-100 .btn-primary {
+                    min-height: 42px;
+
+                    background: #d71920 !important;
+                    border-color: #d71920 !important;
+
+                    color: #fff !important;
+
+                    border-radius: 7px !important;
+
+                    font-weight: 700;
+                }
+
+
+                body.bg-100 .btn-primary:hover {
+                    background: #b5151b !important;
+                    border-color: #b5151b !important;
+                }
+
+
+                body.bg-100 .btn-link {
+                    color: #b5151b !important;
+                }
+
+            </style>
+
+        </xpath>
+
+    </template>
+
+
+    <!-- ====================================================== -->
+    <!-- FORCE FACTORY LOGIN FORM VISIBLE                       -->
+    <!-- ====================================================== -->
+
+    <template
+        id="onesuite_native_login_form"
+        inherit_id="web.login"
+        name="OneSuite Native Login Form"
+        priority="300"
+    >
+
+        <!--
+            Odoo 19 normally shows web.user_switch when no login
+            value exists.
+
+            Remove only that launcher. Authentication itself is
+            untouched.
+        -->
+
+        <xpath
+            expr="//owl-component[@name='web.user_switch']"
+            position="replace"
+        />
+
+
+        <!-- Keep exact factory form; remove only conditional d-none -->
+
+        <xpath
+            expr="//form[contains(@t-attf-class, 'oe_login_form')]"
+            position="attributes"
+        >
+
+            <attribute name="t-attf-class">
+                oe_login_form
+            </attribute>
+
+        </xpath>
+
+    </template>
+
+</odoo>

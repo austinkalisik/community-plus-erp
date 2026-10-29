@@ -1,0 +1,161 @@
+
+body:has(.oe_login_form) {
+
+    min-height:
+        100vh;
+
+    background:
+        linear-gradient(
+            90deg,
+            #171a20 0%,
+            #171a20 48%,
+            #f5f6f8 48%,
+            #f5f6f8 100%
+        ) !important;
+}
+
+
+body:has(.oe_login_form) main {
+
+    min-height:
+        100vh;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+}
+
+
+body:has(.oe_login_form) .oe_login_form {
+
+    width:
+        min(
+            420px,
+            calc(100vw - 34px)
+        );
+
+    padding:
+        34px;
+
+    background:
+        #fff;
+
+    border:
+        1px solid #e1e4e8;
+
+    border-radius:
+        12px;
+
+    box-shadow:
+        0 18px 50px
+        rgba(16,24,40,.13);
+}
+
+
+body:has(.oe_login_form)
+.oe_login_form::before {
+
+    content:
+        "OneSuite";
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        #171a21;
+
+    font-size:
+        30px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -.8px;
+}
+
+
+body:has(.oe_login_form)
+.oe_login_form::after {
+
+    content:
+        "NextGen Technology Limited";
+
+    display:
+        block;
+
+    margin-top:
+        24px;
+
+    padding-top:
+        18px;
+
+    border-top:
+        1px solid #eceef1;
+
+    color:
+        #667085;
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .8px;
+
+    text-align:
+        center;
+
+    text-transform:
+        uppercase;
+}
+
+
+body:has(.oe_login_form)
+.btn-primary {
+
+    width:
+        100%;
+
+    min-height:
+        42px;
+
+    background:
+        #d71920 !important;
+
+    border-color:
+        #d71920 !important;
+
+    font-weight:
+        700;
+}
+
+
+body:has(.oe_login_form)
+.form-control {
+
+    min-height:
+        42px;
+
+    border-radius:
+        7px;
+}
+
+
+@media (max-width: 800px) {
+
+    body:has(.oe_login_form) {
+
+        background:
+            #f5f6f8 !important;
+    }
+
+}
+

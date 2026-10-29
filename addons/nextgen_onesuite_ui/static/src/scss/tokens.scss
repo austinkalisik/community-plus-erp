@@ -1,0 +1,47 @@
+:root {
+    /* ===============================================================
+       ONESUITE / NEXTGEN CORPORATE DESIGN SYSTEM
+       =============================================================== */
+
+    --os-red: #d71920;
+    --os-red-dark: #b4151b;
+    --os-red-soft: #fff1f2;
+
+    --os-black: #111318;
+    --os-graphite: #1b1f27;
+    --os-slate: #374151;
+
+    --os-bg: #f5f6f8;
+    --os-bg-soft: #fafafa;
+    --os-surface: #ffffff;
+    --os-surface-2: #f9fafb;
+
+    --os-border: #e4e7ec;
+    --os-border-strong: #d0d5dd;
+
+    --os-text: #171a21;
+    --os-text-secondary: #475467;
+    --os-muted: #667085;
+
+    --os-success: #16865c;
+    --os-warning: #c47a08;
+    --os-danger: #c9272f;
+    --os-info: #2864a7;
+
+    --os-radius-xs: 5px;
+    --os-radius-sm: 7px;
+    --os-radius: 10px;
+    --os-radius-lg: 14px;
+
+    --os-shadow-xs:
+        0 1px 2px rgba(16, 24, 40, 0.04);
+
+    --os-shadow-sm:
+        0 1px 3px rgba(16, 24, 40, 0.08),
+        0 1px 2px rgba(16, 24, 40, 0.04);
+
+    --os-shadow:
+        0 8px 24px rgba(16, 24, 40, 0.08);
+
+    --os-transition: 160ms ease;
+}

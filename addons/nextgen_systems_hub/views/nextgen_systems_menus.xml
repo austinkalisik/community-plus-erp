@@ -18,26 +18,7 @@
         <field name="url">https://store.nextgenpng.net</field>
         <field name="target">new</field>
     </record>
-
-    <record id="action_open_sms" model="ir.actions.act_url">
-        <field name="name">SMS Gateway</field>
-        <field name="url">https://sms.tidalwavesoftwebsolutions.tech</field>
-        <field name="target">new</field>
-    </record>
-
-    <record id="action_open_paperclip" model="ir.actions.act_url">
-        <field name="name">Paperclip</field>
-        <field name="url">https://paperclip.tidalwavesoftwebsolutions.tech</field>
-        <field name="target">new</field>
-    </record>
-
-    <record id="action_open_godseye" model="ir.actions.act_url">
-        <field name="name">God's Eye</field>
-        <field name="url">https://godseye.tidalwavesoftwebsolutions.tech</field>
-        <field name="target">new</field>
-    </record>
-
-    <record id="action_open_support" model="ir.actions.act_url">
+<record id="action_open_support" model="ir.actions.act_url">
         <field name="name">NextGen Support</field>
         <field name="url">https://nextgenpng.net/support/</field>
         <field name="target">new</field>
@@ -84,35 +65,7 @@
         sequence="20"
         groups="base.group_user"
     />
-
-    <menuitem
-        id="menu_nextgen_sms"
-        name="SMS Gateway"
-        parent="menu_nextgen_systems_root"
-        action="action_open_sms"
-        sequence="30"
-        groups="base.group_user"
-    />
-
-    <menuitem
-        id="menu_nextgen_paperclip"
-        name="Paperclip"
-        parent="menu_nextgen_systems_root"
-        action="action_open_paperclip"
-        sequence="40"
-        groups="base.group_user"
-    />
-
-    <menuitem
-        id="menu_nextgen_godseye"
-        name="God's Eye"
-        parent="menu_nextgen_systems_root"
-        action="action_open_godseye"
-        sequence="50"
-        groups="base.group_user"
-    />
-
-    <menuitem
+<menuitem
         id="menu_nextgen_support"
         name="Support"
         parent="menu_nextgen_systems_root"

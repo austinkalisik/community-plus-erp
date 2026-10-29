@@ -1,0 +1,73 @@
+@media (max-width: 1200px) {
+    .os-platform-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .os-workspace-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .os-platform-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .os-navbar-brand {
+        min-width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .os-navbar-brand__company {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .os-dashboard {
+        padding: 16px;
+    }
+
+    .os-dashboard__hero {
+        padding: 26px 22px;
+    }
+
+    .os-dashboard__status {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 25px;
+        width: fit-content;
+    }
+
+    .os-platform-grid,
+    .os-workspace-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .os-company-strip {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .os-platform-card:hover,
+    .o_kanban_renderer .o_kanban_record:hover,
+    .btn:hover {
+        transform: none !important;
+    }
+}
