@@ -22,6 +22,7 @@
 
     "data": [
         "views/website.xml",
+        "data/catalog_branding.xml",
     ],
 
     # Public website CSS is loaded directly from website.xml.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.module_om_account_accountant" model="ir.module.module">
+        <field name="shortdesc">AUSKAL Accounting</field>
+    </record>
+    <record id="base.module_om_hr_payroll" model="ir.module.module">
+        <field name="shortdesc">AUSKAL Payroll</field>
+        <field name="summary">Payroll for AUSKAL OneSuite Community Edition (Odoo 18 compatible)</field>
+    </record>
+    <record id="base.module_om_hr_payroll_account" model="ir.module.module">
+        <field name="shortdesc">AUSKAL Payroll Accounting</field>
+    </record>
+</odoo>

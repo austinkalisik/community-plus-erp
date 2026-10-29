@@ -33,7 +33,7 @@
 
     <menuitem
         id="menu_nextgen_systems_root"
-        name="NextGen Platform"
+        name="AUSKAL OneSuite"
         sequence="1"
         groups="base.group_user"
     />
