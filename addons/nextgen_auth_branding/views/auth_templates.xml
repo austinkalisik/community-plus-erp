@@ -64,21 +64,7 @@
         </xpath>
 
 
-        <!-- Remove visible upstream branding only -->
 
-        <xpath
-            expr="//a[contains(@href, 'odoo.com')]"
-            position="replace"
-        >
-            <span
-                style="
-                    font-size:11px;
-                    color:#667085;
-                "
-            >
-                AUSKAL OneSuite by NextGen Technology Limited
-            </span>
-        </xpath>
 
 
         <!--
