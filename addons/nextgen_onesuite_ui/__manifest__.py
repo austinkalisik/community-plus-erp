@@ -29,7 +29,12 @@
     #
     "data": [],
 
-    "assets": {},
+    "assets": {
+        "web.assets_backend": [
+            "nextgen_onesuite_ui/static/src/js/auskal_brand.js",
+            "nextgen_onesuite_ui/static/src/scss/auskal_brand.scss",
+        ],
+    },
 
     "installable": True,
 
