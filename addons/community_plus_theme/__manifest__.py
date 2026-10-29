@@ -1,9 +1,9 @@
 {
-    "name": "Community Plus Theme",
+    "name": "Auskal Theme",
     "version": "19.0.1.0.0",
     "category": "Productivity",
-    "summary": "Shared premium UI styling for Community Plus custom screens",
-    "author": "Farid",
+    "summary": "Auskal visual identity and shared styling for Nextgen custom screens",
+    "author": "Nextgen Technology Limited",
     "license": "LGPL-3",
     "depends": ["web"],
     "assets": {

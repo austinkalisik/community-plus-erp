@@ -1,4 +1,10 @@
-# Community Plus ERP — Odoo 19 Community Suite
+# Auskal — Nextgen Technology Limited ERP Suite
+
+Auskal is Nextgen Technology Limited's branded ERP product built on Odoo 19
+Community, audited open-source addons, and custom modules. Nextgen Technology
+Limited owns the Auskal name, visual identity, and its original custom modules.
+Odoo and third-party components retain their respective names, copyrights, and
+licenses. See [BRANDING.md](docs/BRANDING.md) for the attribution policy.
 
 A complete, **license-clean Odoo 19 Community** stack that delivers
 Enterprise-grade capability without Enterprise: a Dockerized multi-company
