@@ -24,6 +24,7 @@ new MutationObserver(applyAuskalIdentity).observe(document.documentElement, {
 });
 
 registry.category("user_menuitems").remove("odoo_account");
+registry.category("user_menuitems").remove("support");
 
 function auskalizeUrl(url) {
     if (typeof url !== "string") return url;
